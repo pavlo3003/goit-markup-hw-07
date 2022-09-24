@@ -1,0 +1,52 @@
+.clients {
+    background-color: var(--body-background-color);
+}
+
+.clients-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--secondary-text-color-theme-light);
+}
+
+.clients-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-color: #afb1b8;
+    border-radius: 4px;
+    height: 92px;
+    width: 170px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
+}
+
+.clients-icon {
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .clients-link:hover &,
+    .clients-link:focus & {
+        fill: var(--accent-color);
+    }
+}
+
+

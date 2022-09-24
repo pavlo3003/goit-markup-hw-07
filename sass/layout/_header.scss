@@ -1,0 +1,133 @@
+header {
+    border-bottom: 1px solid #ececec;
+}
+
+.page-header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.page-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.logo {
+    font-family: var(--secondary-fonts);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--secondary-text-color-theme-light);
+    margin-right: 93px;
+}
+
+.text-logo {
+    color: var(--accent-color);
+}
+
+.menu-link {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color-theme-light);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+    &.current::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background: var(--accent-color);
+        bottom: -1px;
+    }
+
+    .menu &.current {
+        color: var(--accent-color);
+    }
+}
+
+.contact-menu {
+    display: flex;
+    align-items: center;
+}
+
+.contact-phone-number {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-theme-light);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.contact-e-mail {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-theme-light);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.contact-icon {
+    fill: var(--primary-text-color-theme-light);
+
+    .contact-phone-number:hover &,
+    .contact-phone-number:focus &,
+    .contact-e-mail:hover &,
+    .contact-e-mail:hover & {
+        fill: var(--accent-color);
+    }
+}
+
+.contact-menu-item {
+    margin-right: 30px;
+}
