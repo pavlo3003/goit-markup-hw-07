@@ -21,7 +21,7 @@ header {
     display: flex;
 }
 
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -31,14 +31,15 @@ header {
     font-size: 26px;
     line-height: 1.19;
     color: var(--secondary-text-color-theme-light);
+}
+.page-navigation__logo {
     margin-right: 93px;
 }
-
-.text-logo {
+.logo__text {
     color: var(--accent-color);
 }
 
-.menu-link {
+.menu__link {
     position: relative;
     font-weight: 500;
     font-size: 14px;

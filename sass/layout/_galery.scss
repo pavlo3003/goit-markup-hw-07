@@ -1,15 +1,13 @@
-.galery-container {
+.galery__container {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
-
-.galery-list {
+.galery__list {
     flex-basis: calc((100% - 60px) / 3);
     position: relative;
 }
-
-.galery-title {
+.galery__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -17,8 +15,7 @@
     color: var(--secondary-text-color-theme-light);
     margin-bottom: 50px;
 }
-
-.galery-list-description-text {
+.galery__text {
     display: flex;
     position: absolute;
     width: 100%;

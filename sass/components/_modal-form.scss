@@ -1,7 +1,5 @@
 .modal-form-title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    @include font(20px, 700, 23px);
     text-align: center;
     margin-bottom: 12px;
     color: var(--secondary-text-color-theme-light);
@@ -46,9 +44,7 @@
 .modal-form-field-desc {
     display: block;
     margin-bottom: 4px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
+    @include font(12px, 400, 14px);
     letter-spacing: 0.01em;
     color: var(--primary-text-color-theme-light);
 }
@@ -77,9 +73,7 @@
     resize: none;
 
     &::placeholder {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
+        @include font(12px, 400, 14px);
         letter-spacing: 0.01em;
         color: rgba(117, 117, 117, 0.5);
     }
@@ -92,9 +86,7 @@
 }
 
 .modal-form-check-field {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %align;
     margin-bottom: 30px;
     font-weight: 400;
     font-size: 14px;
